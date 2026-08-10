@@ -7,7 +7,7 @@ A modern, animated portfolio site built with **React 18**, **TypeScript**, and *
 ![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-**Live site:** _add your deployed URL here after deploying_
+**Live site:** _prathmesh-thorve.netlify.app_
 
 ---
 
