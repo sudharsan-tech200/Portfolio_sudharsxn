@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="s-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050816" />
+      <stop offset="50%" stop-color="#0C1236" />
+      <stop offset="100%" stop-color="#060A1C" />
+    </linearGradient>
+    <linearGradient id="s-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#s-bg)" />
+
+  <!-- App Header -->
+  <rect x="30" y="20" width="740" height="42" rx="8" fill="rgba(14,20,46,0.75)" stroke="rgba(139,92,246,0.35)" stroke-width="1" />
+  <text x="50" y="46" font-family="'Outfit', sans-serif" font-size="16" font-weight="800" fill="url(#s-card)">Skillora</text>
+  <text x="130" y="46" font-family="'JetBrains Mono', monospace" font-size="12" fill="#38BDF8">MERN FULL STACK LEARNING MANAGEMENT PLATFORM</text>
+  <text x="610" y="46" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10B981">ROLE: STUDENT / ADMIN</text>
+
+  <!-- Left Side: Active Courses Feed -->
+  <g transform="translate(30, 80)">
+    <!-- Course Card 1: Data Structures -->
+    <rect width="360" height="155" rx="12" fill="#0C132E" stroke="rgba(56,189,248,0.3)" stroke-width="1.5" />
+    <rect x="16" y="16" width="328" height="40" rx="8" fill="rgba(56,189,248,0.12)" />
+    <text x="30" y="41" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#38BDF8">Data Structures &amp; Algorithmic Mastery</text>
+    
+    <text x="20" y="80" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">PROGRESS: 84% COMPLETE (21/25 MODULES)</text>
+    <rect x="20" y="92" width="320" height="8" rx="4" fill="rgba(255,255,255,0.08)" />
+    <rect x="20" y="92" width="270" height="8" rx="4" fill="#38BDF8" />
+    <text x="20" y="125" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10B981">NEXT: Dynamic Programming &amp; Trees</text>
+    <text x="260" y="135" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#38BDF8">Continue →</text>
+
+    <!-- Course Card 2: Full Stack Engineering -->
+    <g transform="translate(0, 175)">
+      <rect width="360" height="155" rx="12" fill="#0C132E" stroke="rgba(139,92,246,0.3)" stroke-width="1.5" />
+      <rect x="16" y="16" width="328" height="40" rx="8" fill="rgba(139,92,246,0.12)" />
+      <text x="30" y="41" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#A855F7">MERN Full Stack Web Architecture</text>
+
+      <text x="20" y="80" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">PROGRESS: 92% COMPLETE (23/25 MODULES)</text>
+      <rect x="20" y="92" width="320" height="8" rx="4" fill="rgba(255,255,255,0.08)" />
+      <rect x="20" y="92" width="295" height="8" rx="4" fill="#A855F7" />
+      <text x="20" y="125" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10B981">NEXT: Production JWT Auth &amp; REST APIs</text>
+      <text x="260" y="135" font-family="'Outfit', sans-serif" font-size="12" font-weight="700" fill="#A855F7">Continue →</text>
+    </g>
+  </g>
+
+  <!-- Right Side: Analytics & Architecture Gateway -->
+  <g transform="translate(410, 80)">
+    <!-- 3 Stat Cards -->
+    <rect width="110" height="90" rx="10" fill="#0C132E" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+    <text x="55" y="35" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8" text-anchor="middle">ENROLLED</text>
+    <text x="55" y="65" font-family="'Outfit', sans-serif" font-size="22" font-weight="800" fill="#38BDF8" text-anchor="middle">8 Courses</text>
+
+    <g transform="translate(125, 0)">
+      <rect width="110" height="90" rx="10" fill="#0C132E" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+      <text x="55" y="35" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8" text-anchor="middle">ATTENDANCE</text>
+      <text x="55" y="65" font-family="'Outfit', sans-serif" font-size="22" font-weight="800" fill="#10B981" text-anchor="middle">98.4%</text>
+    </g>
+
+    <g transform="translate(250, 0)">
+      <rect width="110" height="90" rx="10" fill="#0C132E" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+      <text x="55" y="35" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8" text-anchor="middle">AVERAGE</text>
+      <text x="55" y="65" font-family="'Outfit', sans-serif" font-size="22" font-weight="800" fill="#FFA116" text-anchor="middle">A+ Grade</text>
+    </g>
+
+    <!-- Tech Stack & Schema Card -->
+    <g transform="translate(0, 110)">
+      <rect width="360" height="220" rx="12" fill="#0C132E" stroke="rgba(56,189,248,0.25)" stroke-width="1.5" />
+      <text x="20" y="32" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38BDF8">MERN ARCHITECTURE SCHEMA</text>
+
+      <!-- DB schema visual nodes -->
+      <g transform="translate(20, 50)">
+        <rect width="90" height="45" rx="6" fill="rgba(16,185,129,0.15)" stroke="#10B981" stroke-width="1" />
+        <text x="45" y="20" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#10B981" text-anchor="middle">MongoDB</text>
+        <text x="45" y="34" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">Courses / Users</text>
+
+        <rect x="115" width="90" height="45" rx="6" fill="rgba(255,255,255,0.08)" stroke="#64748B" stroke-width="1" />
+        <text x="160" y="20" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#F8FAFC" text-anchor="middle">Express.js</text>
+        <text x="160" y="34" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">RESTful APIs</text>
+
+        <rect x="230" width="90" height="45" rx="6" fill="rgba(56,189,248,0.15)" stroke="#38BDF8" stroke-width="1" />
+        <text x="275" y="20" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38BDF8" text-anchor="middle">React.js</text>
+        <text x="275" y="34" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">State &amp; Hooks</text>
+      </g>
+
+      <text x="20" y="130" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">RBAC: Granular Student, Instructor, Admin Portals</text>
+      <text x="20" y="150" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">SECURITY: JWT Tokens &amp; Bcrypt Password Hashing</text>
+      <text x="20" y="170" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10B981">STATUS: Fully Functional Full-Stack Platform</text>
+    </g>
+  </g>
+</svg>

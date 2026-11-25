@@ -19,10 +19,10 @@ export default function SectionHeader({
             fontFamily: "var(--font-mono)",
             fontSize: 12,
             fontWeight: 600,
-            color: "var(--accent)",
-            letterSpacing: 3,
+            color: "var(--cyan)",
+            letterSpacing: 2.5,
             textTransform: "uppercase",
-            display: "block",
+            display: "inline-block",
             marginBottom: 12,
           }}
         >
@@ -30,12 +30,13 @@ export default function SectionHeader({
         </span>
         <h2
           style={{
-            fontSize: "clamp(30px, 4.5vw, 48px)",
+            fontFamily: "var(--font-heading)",
+            fontSize: "clamp(28px, 4vw, 44px)",
             fontWeight: 800,
-            color: "var(--text)",
+            color: "var(--text-primary)",
             margin: 0,
-            letterSpacing: "-1.5px",
-            lineHeight: 1.1,
+            letterSpacing: "-0.025em",
+            lineHeight: 1.2,
           }}
         >
           {title}
@@ -44,10 +45,10 @@ export default function SectionHeader({
           <p
             style={{
               fontSize: 16,
-              color: "var(--text-faint)",
-              marginTop: 16,
-              maxWidth: 500,
-              lineHeight: 1.6,
+              color: "var(--text-secondary)",
+              marginTop: 14,
+              maxWidth: 540,
+              lineHeight: 1.65,
             }}
           >
             {subtitle}

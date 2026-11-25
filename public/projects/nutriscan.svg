@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="n-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040816" />
+      <stop offset="50%" stop-color="#09102E" />
+      <stop offset="100%" stop-color="#05091C" />
+    </linearGradient>
+    <filter id="n-glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#n-bg)" />
+
+  <!-- Top Telemetry Header -->
+  <rect x="30" y="20" width="740" height="42" rx="8" fill="rgba(14,20,46,0.75)" stroke="rgba(16,185,129,0.35)" stroke-width="1" />
+  <circle cx="52" cy="41" r="5" fill="#10B981" filter="url(#n-glow)" />
+  <text x="68" y="46" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#10B981">NUTRISCAN: SMART LEGAL METROLOGY OCR INSPECTION</text>
+  <text x="535" y="46" font-family="'JetBrains Mono', monospace" font-size="12" fill="#FFA116">SIH 2026 TOP 20 FINALIST</text>
+
+  <!-- Left: Simulated Packaged Product with OCR Bounding Boxes -->
+  <g transform="translate(40, 85)">
+    <!-- Package Frame -->
+    <rect width="360" height="325" rx="14" fill="#0C132E" stroke="rgba(56,189,248,0.3)" stroke-width="1.5" />
+    <rect x="20" y="20" width="320" height="285" rx="10" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.06)" stroke-dasharray="4 4" />
+    
+    <!-- Package Brand Banner -->
+    <rect x="40" y="40" width="280" height="44" rx="8" fill="linear-gradient(135deg, #10B981, #0284C7)" opacity="0.85" />
+    <text x="180" y="68" font-family="'Outfit', sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ORGANIC NUTRI BAR</text>
+
+    <!-- Laser OCR Scan Beam -->
+    <line x1="20" y1="170" x2="340" y2="170" stroke="#38BDF8" stroke-width="2.5" filter="url(#n-glow)" />
+
+    <!-- Detection Box 1: MRP -->
+    <rect x="40" y="105" width="280" height="36" rx="6" fill="rgba(16,185,129,0.15)" stroke="#10B981" stroke-width="1.5" />
+    <text x="50" y="128" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF">MRP: ₹ 45.00 (INCL. OF ALL TAXES)</text>
+    <text x="270" y="128" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#10B981">[VALID ✓]</text>
+
+    <!-- Detection Box 2: MFG & EXP -->
+    <rect x="40" y="152" width="280" height="36" rx="6" fill="rgba(56,189,248,0.15)" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="50" y="175" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF">MFG: 10/2026 · EXP: 04/2027</text>
+    <text x="270" y="175" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38BDF8">[VALID ✓]</text>
+
+    <!-- Detection Box 3: Net Quantity -->
+    <rect x="40" y="198" width="280" height="36" rx="6" fill="rgba(139,92,246,0.15)" stroke="#A855F7" stroke-width="1.5" />
+    <text x="50" y="221" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF">NET WT: 200g · BATCH: NX-402</text>
+    <text x="270" y="221" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#A855F7">[VALID ✓]</text>
+
+    <!-- Detection Box 4: Manufacturer / FSSAI -->
+    <rect x="40" y="244" width="280" height="36" rx="6" fill="rgba(245,158,11,0.15)" stroke="#F59E0B" stroke-width="1.5" />
+    <text x="50" y="267" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#FFFFFF">FSSAI LIC: 10019042000214</text>
+    <text x="270" y="267" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#F59E0B">[VALID ✓]</text>
+  </g>
+
+  <!-- Right: Verification Telemetry Dashboard -->
+  <g transform="translate(430, 85)">
+    <!-- Compliance Score Card -->
+    <rect width="330" height="150" rx="14" fill="#0C132E" stroke="rgba(16,185,129,0.4)" stroke-width="1.5" />
+    <text x="24" y="32" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#10B981">STATUTORY COMPLIANCE AUDIT</text>
+    
+    <text x="24" y="85" font-family="'Outfit', sans-serif" font-size="48" font-weight="900" fill="#10B981">100%</text>
+    <text x="165" y="68" font-family="'Outfit', sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">LEGAL METROLOGY</text>
+    <text x="165" y="86" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38BDF8">All 4 Mandatory Declarations Present</text>
+    <text x="165" y="104" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94A3B8">Statutory Rule 2011 Verified</text>
+
+    <!-- Pipeline Architecture Card -->
+    <g transform="translate(0, 168)">
+      <rect width="330" height="157" rx="14" fill="#0C132E" stroke="rgba(56,189,248,0.3)" stroke-width="1.5" />
+      <text x="20" y="28" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38BDF8">PIPELINE ARCHITECTURE</text>
+
+      <g transform="translate(20, 44)">
+        <rect width="85" height="38" rx="6" fill="rgba(56,189,248,0.12)" stroke="#38BDF8" stroke-width="1" />
+        <text x="42" y="18" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#38BDF8" text-anchor="middle">OpenCV</text>
+        <text x="42" y="30" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">Pre-Process</text>
+
+        <text x="96" y="24" font-size="14" fill="#38BDF8">→</text>
+
+        <rect x="110" width="85" height="38" rx="6" fill="rgba(16,185,129,0.12)" stroke="#10B981" stroke-width="1" />
+        <text x="152" y="18" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#10B981" text-anchor="middle">OCR Model</text>
+        <text x="152" y="30" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">Extraction</text>
+
+        <text x="206" y="24" font-size="14" fill="#10B981">→</text>
+
+        <rect x="220" width="85" height="38" rx="6" fill="rgba(139,92,246,0.12)" stroke="#A855F7" stroke-width="1" />
+        <text x="262" y="18" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#A855F7" text-anchor="middle">React UI</text>
+        <text x="262" y="30" font-family="'JetBrains Mono', monospace" font-size="8" fill="#94A3B8" text-anchor="middle">Dashboard</text>
+      </g>
+
+      <text x="20" y="112" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">LATENCY: 420ms | CONFIDENCE: 99.4%</text>
+      <text x="20" y="132" font-family="'JetBrains Mono', monospace" font-size="11" fill="#10B981">SKCET INTERNAL HACKATHON FINALIST</text>
+    </g>
+  </g>
+</svg>

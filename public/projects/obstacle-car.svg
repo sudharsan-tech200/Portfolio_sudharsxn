@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="c-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040713" />
+      <stop offset="50%" stop-color="#090E26" />
+      <stop offset="100%" stop-color="#050717" />
+    </linearGradient>
+    <radialGradient id="sonarGlow" cx="0%" cy="50%" r="100%">
+      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.4)" />
+      <stop offset="70%" stop-color="rgba(56, 189, 248, 0.05)" />
+      <stop offset="100%" stop-color="transparent" />
+    </radialGradient>
+    <filter id="c-glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#c-bg)" />
+
+  <!-- Top Telemetry Header -->
+  <rect x="30" y="20" width="740" height="42" rx="8" fill="rgba(14,20,46,0.75)" stroke="rgba(56,189,248,0.3)" stroke-width="1" />
+  <circle cx="52" cy="41" r="5" fill="#38BDF8" filter="url(#c-glow)" />
+  <text x="68" y="46" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700" fill="#38BDF8">AUTONOMOUS ROBOTIC VEHICLE: ULTRASONIC + HC-05 BLUETOOTH</text>
+  <text x="560" y="46" font-family="'JetBrains Mono', monospace" font-size="12" fill="#10B981">BT: CONNECTED (9600 BAUD)</text>
+
+  <!-- Left Side: Robotic Car Top-Down Chassis View -->
+  <g transform="translate(180, 240)">
+    <!-- 4 Wheels -->
+    <!-- Front-Left -->
+    <rect x="-105" y="-120" width="30" height="60" rx="6" fill="#1E293B" stroke="#64748B" stroke-width="2" />
+    <line x1="-90" y1="-110" x2="-90" y2="-70" stroke="#94A3B8" stroke-width="2" />
+    <!-- Rear-Left -->
+    <rect x="-105" y="40" width="30" height="60" rx="6" fill="#1E293B" stroke="#64748B" stroke-width="2" />
+    <line x1="-90" y1="50" x2="-90" y2="90" stroke="#94A3B8" stroke-width="2" />
+    <!-- Front-Right -->
+    <rect x="75" y="-120" width="30" height="60" rx="6" fill="#1E293B" stroke="#64748B" stroke-width="2" />
+    <line x1="90" y1="-110" x2="90" y2="-70" stroke="#94A3B8" stroke-width="2" />
+    <!-- Rear-Right -->
+    <rect x="75" y="40" width="30" height="60" rx="6" fill="#1E293B" stroke="#64748B" stroke-width="2" />
+    <line x1="90" y1="50" x2="90" y2="90" stroke="#94A3B8" stroke-width="2" />
+
+    <!-- Chassis Base Plate -->
+    <rect x="-80" y="-130" width="160" height="240" rx="20" fill="rgba(14,24,60,0.85)" stroke="#38BDF8" stroke-width="2" />
+    
+    <!-- Microcontroller Arduino UNO Plate -->
+    <rect x="-60" y="-30" width="120" height="90" rx="6" fill="#0284C7" stroke="#38BDF8" stroke-width="1.5" />
+    <text x="0" y="10" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="800" fill="#FFFFFF" text-anchor="middle">ARDUINO UNO</text>
+    <text x="0" y="26" font-family="'JetBrains Mono', monospace" font-size="9" fill="#E0F2FE" text-anchor="middle">ATmega328P</text>
+
+    <!-- Motor Driver (L298N) -->
+    <rect x="-50" y="70" width="100" height="30" rx="4" fill="#B91C1C" stroke="#EF4444" stroke-width="1" />
+    <text x="0" y="90" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">L298N MOTOR DRIVER</text>
+
+    <!-- Bluetooth Module HC-05 -->
+    <rect x="-60" y="-70" width="45" height="30" rx="4" fill="#1E3A8A" stroke="#60A5FA" stroke-width="1" />
+    <circle cx="-50" cy="-55" r="3" fill="#10B981" filter="url(#c-glow)" />
+    <text x="-37" y="-52" font-family="'JetBrains Mono', monospace" font-size="8" fill="#93C5FD">HC-05</text>
+
+    <!-- Front Bumper Ultrasonic Sensor HC-SR04 -->
+    <rect x="-50" y="-146" width="100" height="24" rx="6" fill="#047857" stroke="#10B981" stroke-width="1.5" />
+    <circle cx="-25" cy="-134" r="8" fill="#1E293B" stroke="#94A3B8" stroke-width="1.5" />
+    <circle cx="-25" cy="-134" r="4" fill="#060A18" />
+    <circle cx="25" cy="-134" r="8" fill="#1E293B" stroke="#94A3B8" stroke-width="1.5" />
+    <circle cx="25" cy="-134" r="4" fill="#060A18" />
+    <text x="0" y="-120" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#A7F3D0" text-anchor="middle">HC-SR04</text>
+
+    <!-- Ultrasonic Emission Pulses -->
+    <path d="M -40 -150 A 60 60 0 0 1 40 -150" fill="none" stroke="#38BDF8" stroke-width="1.5" opacity="0.8" />
+    <path d="M -60 -170 A 90 90 0 0 1 60 -170" fill="none" stroke="#38BDF8" stroke-width="1.8" opacity="0.6" />
+    <path d="M -80 -190 A 120 120 0 0 1 80 -190" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.4" />
+  </g>
+
+  <!-- Right Side: Sensor Obstacle Warning & Navigation Decision -->
+  <g transform="translate(470, 90)">
+    <!-- Warning Box -->
+    <rect width="290" height="130" rx="12" fill="rgba(14,20,46,0.85)" stroke="rgba(239,68,68,0.4)" stroke-width="1.5" />
+    <circle cx="26" cy="28" r="6" fill="#EF4444" filter="url(#c-glow)" />
+    <text x="40" y="32" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#EF4444">COLLISION WARNING: OBSTACLE</text>
+    
+    <text x="24" y="60" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">OBJECT DISTANCE: <tspan fill="#EF4444" font-weight="700">18.4 cm</tspan></text>
+    <text x="24" y="80" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">THRESHOLD: <tspan fill="#FFA116">25.0 cm</tspan></text>
+    <text x="24" y="104" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#10B981">DECISION: STOP &amp; PIVOT RIGHT 45°</text>
+
+    <!-- Telemetry Control Card -->
+    <g transform="translate(0, 150)">
+      <rect width="290" height="160" rx="12" fill="rgba(14,20,46,0.85)" stroke="rgba(56,189,248,0.3)" stroke-width="1.5" />
+      <text x="20" y="30" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#38BDF8">DUAL-MODE CONTROL PROTOCOL</text>
+      
+      <g transform="translate(20, 50)">
+        <rect width="115" height="44" rx="6" fill="rgba(16,185,129,0.15)" stroke="#10B981" stroke-width="1" />
+        <text x="10" y="20" font-family="'JetBrains Mono', monospace" font-size="10" fill="#10B981" font-weight="700">MODE 1: AUTO</text>
+        <text x="10" y="34" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">Sonar Evasion</text>
+
+        <rect x="130" width="120" height="44" rx="6" fill="rgba(56,189,248,0.15)" stroke="#38BDF8" stroke-width="1" />
+        <text x="140" y="20" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38BDF8" font-weight="700">MODE 2: RC</text>
+        <text x="140" y="34" font-family="'JetBrains Mono', monospace" font-size="9" fill="#94A3B8">Bluetooth Serial</text>
+      </g>
+
+      <text x="20" y="125" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">BAUD RATE: 9600 bps</text>
+      <text x="20" y="145" font-family="'JetBrains Mono', monospace" font-size="11" fill="#94A3B8">POWER SUPPLY: 7.4V Li-ion (Dual)</text>
+    </g>
+  </g>
+</svg>
